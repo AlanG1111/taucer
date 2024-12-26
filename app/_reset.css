@@ -115,11 +115,9 @@ html {
 
 body {
   line-height: 1;
-  font-family: 'Golos', sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.07875px;
 }
 
 ol,
@@ -139,7 +137,7 @@ q {
 
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
