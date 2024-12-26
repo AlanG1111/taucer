@@ -1,40 +1,125 @@
 "use client";
 
-import { Routes } from "@/config/routes";
-import React from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowDown, MainLogo } from "@/images";
+import { Routes } from "@/config/routes";
+import styles from "./mainHeader.module.scss";
 
 const MainHeader: React.FC = () => {
+  const [expanded, setExpanded] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Toggle dropdown menu
+  const toggleExpansion = () => setExpanded((prev) => !prev);
+
+  // Collapse dropdown menu
+  const collapseMenu = useCallback(() => setExpanded(false), []);
+
+  // Collapse when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target as Node)
+      ) {
+        collapseMenu();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [collapseMenu]);
+
+  // Handle menu item click
+  const handleLinkClick = () => collapseMenu();
+
   return (
-    <div>
-      header
-      <Link
-        href={Routes.Root}
-        passHref
-        style={{
-          textDecoration: "none",
-        }}
-      >
-        Go to Home
-      </Link>
-      <nav>
-        <ul style={{ listStyleType: "none", padding: 0 }}>
-          {Object.entries(Routes).map(([key, path]) => (
-            <li key={key} style={{ margin: "8px 0" }}>
-              <Link
-                href={path}
-                passHref
-                style={{
-                  textDecoration: "none",
-                }}
-              >
-                {key}
-              </Link>
-            </li>
+    <header
+      ref={containerRef}
+      className={`${styles.headerWrapper} ${expanded ? styles.expanded : ""}`}
+    >
+      <div className={styles.headerContainer}>
+        {/* Logo */}
+        <Link href={Routes.Root} passHref onClick={handleLinkClick}>
+          <MainLogo />
+        </Link>
+
+        {/* Navigation */}
+        <nav className={styles.navigationContainer}>
+          {/* Dropdown */}
+          <div>
+            <div
+              className={`${styles.menuItem} ${styles.dropDownTitle}`}
+              onClick={toggleExpansion}
+              aria-expanded={expanded}
+              aria-controls='dropdown-menu'
+            >
+              <span>Напрямки</span>
+              <ArrowDown />
+            </div>
+            <AnimatePresence>
+              {expanded && (
+                <motion.ul
+                  id='dropdown-menu'
+                  className={styles.dropDownItemsWrapper}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  role='menu'
+                >
+                  {[
+                    {
+                      route: Routes.ElementarySchool,
+                      label: "Школа 0-4 класи",
+                    },
+                    { route: Routes.HighSchool, label: "Школа 5 - 11 клас" },
+                    { route: Routes.Boarding, label: "Бординг" },
+                    { route: Routes.OnlineSchool, label: "Online школа" },
+                    { route: Routes.Preschool, label: "Табір" },
+                  ].map(({ route, label }) => (
+                    <li key={route} role='menuitem'>
+                      <Link
+                        href={route}
+                        passHref
+                        onClick={handleLinkClick}
+                        className={styles.subMenuItem}
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Other Links */}
+          {[
+            { route: Routes.About, label: "Про нас" },
+            { route: Routes.Contacts, label: "Контакти" },
+            { route: Routes.SchoolLife, label: "Життя школи" },
+          ].map(({ route, label }) => (
+            <Link
+              key={route}
+              href={route}
+              passHref
+              onClick={handleLinkClick}
+              className={styles.menuItem}
+            >
+              {label}
+            </Link>
           ))}
-        </ul>
-      </nav>
-    </div>
+        </nav>
+
+        {/* CTA */}
+        <div onClick={collapseMenu} className={styles.ctaButton}>
+          Залишити заявку
+        </div>
+      </div>
+    </header>
   );
 };
 

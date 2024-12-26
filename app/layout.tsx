@@ -25,7 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={artegraSans.className}>
+      <body
+        className={artegraSans.className}
+        style={{
+          backgroundColor: "grey",
+        }}
+      >
         <MainHeader />
         <main>{children}</main>
         <footer>footer</footer>
