@@ -1,3 +1,10 @@
+'use client';
+import MainIntro from '@/components/MainIntro/MainIntro';
+
 export default function Home() {
-  return <div>main</div>;
+  return (
+    <div>
+      <MainIntro />
+    </div>
+  );
 }

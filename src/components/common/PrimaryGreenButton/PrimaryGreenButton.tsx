@@ -5,11 +5,16 @@ type Props = {
   title: string;
   onClick: () => void;
   disabled?: boolean;
+  reversedColor?: boolean;
 };
 
-const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = false }) => {
+const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = false, reversedColor = false }) => {
   return (
-    <button className={styles.animatedButton} onClick={onClick} disabled={disabled}>
+    <button
+      className={`${styles.animatedButton} ${reversedColor ? styles.reversed : ''}`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <span>{title}</span>
     </button>
   );

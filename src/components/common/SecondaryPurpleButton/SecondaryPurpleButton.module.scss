@@ -3,13 +3,13 @@
 .animatedButton {
   font-family: var(--font-primary);
   border-radius: 32px;
-  background: $green-dark;
+  background: $dark-purple;
   display: inline-flex;
   height: 48px;
-  padding: 18px 32px;
-  justify-content: center;
+  padding: 4px 4px 4px 24px;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   flex-shrink: 0;
   border: none;
   cursor: pointer;
@@ -18,17 +18,14 @@
   z-index: 0;
   transition: color 0.4s ease-out;
 
-  &.reversed {
-    background: $green-light;
-  }
-
   & span {
+    text-align: center;
     color: $white;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    letter-spacing: 0.16px;
+    letter-spacing: 0.1px;
   }
 
   &::before {
@@ -38,19 +35,23 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: $green-light;
+    background: $purple-light;
     border-radius: 32px;
     z-index: -1;
     transition: transform 0.4s ease-out;
     transform: translateX(0%);
   }
 
-  &.reversed::before {
-    background: $green-dark;
-  }
-
   &:hover::before {
     transform: translateX(100%);
+  }
+
+  & .arrow {
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover .arrow {
+    transform: rotate(45deg);
   }
 
   &:disabled {

@@ -1,0 +1,193 @@
+@import '../../../app/_library';
+
+.introWrapper {
+  display: flex;
+  padding: 100px 20px 60px 20px;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+}
+
+.introBackground {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  padding: 60px 60px 40px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  height: 720px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.promoSection {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  & .title {
+    padding: 0px 32px;
+    height: 80px;
+    width: fit-content;
+    border-radius: 50px;
+    background: $green-light;
+
+    & > span {
+      text-align: center;
+      font-size: 50px;
+      line-height: 80px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      vertical-align: top;
+      display: inline-block;
+      padding-top: 5px; // replace with leading-trim: both; text-edge: cap;
+    }
+  }
+
+  & .description {
+    margin-top: 8px;
+    width: 100%;
+    max-width: 730px;
+  }
+
+  & .purpleLabel {
+    display: flex;
+    height: 80px;
+    width: fit-content;
+    transform: rotate(-2deg);
+    padding: 22px 32px;
+    margin-top: -8px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: $dark-purple;
+
+    & > span {
+      text-align: center;
+      padding-top: 10px; // replace with leading-trim: both; text-edge: cap;
+      font-family: 'Artegra Sans Extended';
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 80px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.requestContainer {
+  position: relative;
+  padding-top: 42px;
+  width: fit-content;
+
+  & > svg {
+    position: absolute;
+    top: 5px;
+    right: -85px;
+  }
+}
+
+.videoAboutUsContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  cursor: pointer;
+
+  & > span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  & > span::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 36px;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    transform-origin: left;
+  }
+
+  &:hover span::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  &:hover .arrowContainer {
+    background: $green-dark;
+  }
+
+  & .arrowContainer {
+    width: 72px;
+    height: 72px;
+    background: $green-light;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > svg {
+      margin-left: 8px;
+    }
+  }
+}
+
+.educDirectionsContainer {
+  display: flex;
+  align-self: flex-end;
+  height: fit-content;
+  max-width: 500px;
+  width: 100%;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+
+  & .titleContainer {
+    position: relative;
+    max-width: 400px;
+
+    & > svg {
+      position: absolute;
+      left: 230px;
+      bottom: -10px;
+    }
+
+    & > span {
+      color: $white;
+
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.directionsLinksContainer {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
