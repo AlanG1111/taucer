@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState, useCallback } from "react";
-import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, MainLogo } from "@/images";
-import { Routes } from "@/config/routes";
-import styles from "./mainHeader.module.scss";
+import React, { useEffect, useRef, useState, useCallback } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowDown, MainLogo } from '@/images';
+import { Routes } from '@/config/routes';
+import styles from './mainHeader.module.scss';
 
 const MainHeader: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
@@ -20,26 +20,20 @@ const MainHeader: React.FC = () => {
   // Collapse when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(event.target as Node)
-      ) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         collapseMenu();
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [collapseMenu]);
 
   // Handle menu item click
   const handleLinkClick = () => collapseMenu();
 
   return (
-    <header
-      ref={containerRef}
-      className={`${styles.headerWrapper} ${expanded ? styles.expanded : ""}`}
-    >
+    <header ref={containerRef} className={`${styles.headerWrapper} ${expanded ? styles.expanded : ''}`}>
       <div className={styles.headerContainer}>
         {/* Logo */}
         <Link href={Routes.Root} passHref onClick={handleLinkClick}>
@@ -54,7 +48,7 @@ const MainHeader: React.FC = () => {
               className={`${styles.menuItem} ${styles.dropDownTitle}`}
               onClick={toggleExpansion}
               aria-expanded={expanded}
-              aria-controls='dropdown-menu'
+              aria-controls="dropdown-menu"
             >
               <span>Напрямки</span>
               <ArrowDown />
@@ -62,31 +56,26 @@ const MainHeader: React.FC = () => {
             <AnimatePresence>
               {expanded && (
                 <motion.ul
-                  id='dropdown-menu'
+                  id="dropdown-menu"
                   className={styles.dropDownItemsWrapper}
                   initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
+                  animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.2, ease: "easeOut" }}
-                  role='menu'
+                  transition={{ duration: 0.2, ease: 'easeOut' }}
+                  role="menu"
                 >
                   {[
                     {
                       route: Routes.ElementarySchool,
-                      label: "Школа 0-4 класи",
+                      label: 'Школа 0-4 класи',
                     },
-                    { route: Routes.HighSchool, label: "Школа 5 - 11 клас" },
-                    { route: Routes.Boarding, label: "Бординг" },
-                    { route: Routes.OnlineSchool, label: "Online школа" },
-                    { route: Routes.Preschool, label: "Табір" },
+                    { route: Routes.HighSchool, label: 'Школа 5 - 11 клас' },
+                    { route: Routes.Boarding, label: 'Бординг' },
+                    { route: Routes.OnlineSchool, label: 'Online школа' },
+                    { route: Routes.Preschool, label: 'Табір' },
                   ].map(({ route, label }) => (
-                    <li key={route} role='menuitem'>
-                      <Link
-                        href={route}
-                        passHref
-                        onClick={handleLinkClick}
-                        className={styles.subMenuItem}
-                      >
+                    <li key={route} role="menuitem">
+                      <Link href={route} passHref onClick={handleLinkClick} className={styles.subMenuItem}>
                         {label}
                       </Link>
                     </li>
@@ -98,17 +87,11 @@ const MainHeader: React.FC = () => {
 
           {/* Other Links */}
           {[
-            { route: Routes.About, label: "Про нас" },
-            { route: Routes.Contacts, label: "Контакти" },
-            { route: Routes.SchoolLife, label: "Життя школи" },
+            { route: Routes.About, label: 'Про нас' },
+            { route: Routes.Contacts, label: 'Контакти' },
+            { route: Routes.SchoolLife, label: 'Життя школи' },
           ].map(({ route, label }) => (
-            <Link
-              key={route}
-              href={route}
-              passHref
-              onClick={handleLinkClick}
-              className={styles.menuItem}
-            >
+            <Link key={route} href={route} passHref onClick={handleLinkClick} className={styles.menuItem}>
               {label}
             </Link>
           ))}

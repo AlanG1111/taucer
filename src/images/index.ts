@@ -1,2 +1,2 @@
-export { MainLogo } from "./MainLogo";
-export { ArrowDown } from "./ArrowDown";
+export { MainLogo } from './MainLogo';
+export { ArrowDown } from './ArrowDown';

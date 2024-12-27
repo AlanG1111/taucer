@@ -1,4 +1,4 @@
-@import "../../../app/_library";
+@import '../../../app/_library';
 
 .headerWrapper {
   height: 100%;
@@ -60,7 +60,7 @@
 .menuItem,
 .subMenuItem {
   position: relative;
-  text-decoration: "none";
+  text-decoration: 'none';
   cursor: pointer;
   color: $dark-purple;
   font-size: 16px;
@@ -76,7 +76,7 @@
 
 .menuItem::after,
 .subMenuItem::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   left: 0;
   top: 24px;
