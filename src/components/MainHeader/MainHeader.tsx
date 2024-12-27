@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDown, MainLogo } from '@/images';
 import { Routes } from '@/config/routes';
+import GreenButton from '@/components/common/GreenButton/GreenButton';
 import styles from './mainHeader.module.scss';
 
 const MainHeader: React.FC = () => {
@@ -98,9 +99,7 @@ const MainHeader: React.FC = () => {
         </nav>
 
         {/* CTA */}
-        <div onClick={collapseMenu} className={styles.ctaButton}>
-          Залишити заявку
-        </div>
+        <GreenButton title="Залишити заявку" onClick={collapseMenu} />
       </div>
     </header>
   );
