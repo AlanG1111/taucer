@@ -1,17 +1,6 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import './globals.scss';
 import MainHeader from '@/components/MainHeader/MainHeader';
-
-const artegraSans = localFont({
-  src: [
-    {
-      path: './fonts/ArtegraSansExRegular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
-});
 
 export const metadata: Metadata = {
   title: 'Taucer',
@@ -26,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={artegraSans.className}
         style={{
           backgroundColor: 'grey',
         }}

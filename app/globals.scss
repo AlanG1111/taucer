@@ -1,2 +1,24 @@
 @use './_reset';
 @use './_library';
+
+@font-face {
+  font-family: 'Artegra Sans';
+  src: url('/fonts/ArtegraSansExRegular.eot');
+  src:
+    local('Artegra Sans Extended'),
+    local('ArtegraSansExRegular'),
+    url('/fonts/ArtegraSansExRegular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ArtegraSansExRegular.woff2') format('woff2'),
+    url('/fonts/ArtegraSansExRegular.woff') format('woff'),
+    url('/fonts/ArtegraSansExRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-primary: 'Artegra Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
