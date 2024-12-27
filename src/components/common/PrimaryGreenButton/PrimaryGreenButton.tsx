@@ -7,7 +7,7 @@ type Props = {
   disabled?: boolean;
 };
 
-const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = true }) => {
+const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = false }) => {
   return (
     <button className={styles.animatedButton} onClick={onClick} disabled={disabled}>
       <span>{title}</span>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import './globals.scss';
 import MainHeader from '@/components/MainHeader/MainHeader';
+import MainFooter from '@/components/MainFooter/MainFooter';
+import './globals.scss';
 
 export const metadata: Metadata = {
   title: 'Taucer',
@@ -20,8 +21,8 @@ export default function RootLayout({
         }}
       >
         <MainHeader />
-        <main>{children}</main>
-        <footer>footer</footer>
+        <main style={{ height: '80vh' }}>{children}</main>
+        <MainFooter />
       </body>
     </html>
   );

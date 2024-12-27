@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDown, MainLogo } from '@/components/icons';
-import { Routes } from '@/config/routes';
+import { basicRoutes, Routes, schoolRoutes } from '@/config/routes';
 import GreenButton from '@/components/common/PrimaryGreenButton/PrimaryGreenButton';
 import styles from './mainHeader.module.scss';
 
@@ -65,16 +65,7 @@ const MainHeader: React.FC = () => {
                   transition={{ duration: 0.2, ease: 'easeOut' }}
                   role="menu"
                 >
-                  {[
-                    {
-                      route: Routes.ElementarySchool,
-                      label: 'Школа 0-4 класи',
-                    },
-                    { route: Routes.HighSchool, label: 'Школа 5 - 11 клас' },
-                    { route: Routes.Boarding, label: 'Бординг' },
-                    { route: Routes.OnlineSchool, label: 'Online школа' },
-                    { route: Routes.Preschool, label: 'Табір' },
-                  ].map(({ route, label }) => (
+                  {schoolRoutes.map(({ route, label }) => (
                     <li key={route} role="menuitem">
                       <Link href={route} passHref onClick={handleLinkClick} className={styles.subMenuItem}>
                         {label}
@@ -87,11 +78,7 @@ const MainHeader: React.FC = () => {
           </div>
 
           {/* Other Links */}
-          {[
-            { route: Routes.About, label: 'Про нас' },
-            { route: Routes.Contacts, label: 'Контакти' },
-            { route: Routes.SchoolLife, label: 'Життя школи' },
-          ].map(({ route, label }) => (
+          {basicRoutes.map(({ route, label }) => (
             <Link key={route} href={route} passHref onClick={handleLinkClick} className={styles.menuItem}>
               {label}
             </Link>
