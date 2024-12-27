@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Taucer",
+  "short_name": "Taucer",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
