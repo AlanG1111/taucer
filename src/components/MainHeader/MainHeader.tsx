@@ -3,9 +3,9 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowDown, MainLogo } from '@/images';
+import { ArrowDown, MainLogo } from '@/components/icons';
 import { Routes } from '@/config/routes';
-import GreenButton from '@/components/common/GreenButton/GreenButton';
+import GreenButton from '@/components/common/PrimaryGreenButton/PrimaryGreenButton';
 import styles from './mainHeader.module.scss';
 
 const MainHeader: React.FC = () => {
