@@ -21,7 +21,7 @@ const MainFooter: React.FC = () => {
 
   return (
     <footer className={styles.footerWrapper}>
-      <div className={styles.footerContainer}>
+      <div className={`${styles.footerContainer} container`}>
         <div className={styles.footerHeader}>
           <Image src="/images/footer/logo-120.png" alt="logo" width={120} height={120} loading="lazy" />
           <div className={styles.footerSideContainer}>

@@ -35,7 +35,7 @@ const MainHeader: React.FC = () => {
 
   return (
     <header ref={containerRef} className={`${styles.headerWrapper} ${expanded ? styles.expanded : ''}`}>
-      <div className={styles.headerContainer}>
+      <div className={`${styles.headerContainer} container`}>
         {/* Logo */}
         <Link href={Routes.Root} passHref onClick={handleLinkClick}>
           <MainLogo />
