@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDown, MainLogo } from '@/components/icons';
 import { basicRoutes, Routes, schoolRoutes } from '@/config/routes';
 import GreenButton from '@/components/common/PrimaryGreenButton/PrimaryGreenButton';
+import { handleScrollToForm } from '@/helpers/lib/handleScrollToForm';
 import styles from './mainHeader.module.scss';
 
 const MainHeader: React.FC = () => {
@@ -32,6 +33,11 @@ const MainHeader: React.FC = () => {
 
   // Handle menu item click
   const handleLinkClick = () => collapseMenu();
+
+  const handleLRequestClick = () => {
+    collapseMenu();
+    handleScrollToForm('form-container');
+  };
 
   return (
     <header ref={containerRef} className={`${styles.headerWrapper} ${expanded ? styles.expanded : ''}`}>
@@ -86,7 +92,7 @@ const MainHeader: React.FC = () => {
         </nav>
 
         {/* CTA */}
-        <GreenButton title="Залишити заявку" onClick={collapseMenu} />
+        <GreenButton title="Залишити заявку" onClick={handleLRequestClick} />
       </div>
     </header>
   );

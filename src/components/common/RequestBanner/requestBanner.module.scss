@@ -1,0 +1,100 @@
+@import '../../../../app/_library';
+.bannerWrapper {
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: $green-dark;
+  height: 538px; //временно
+
+  position: relative;
+  background-color: $green-dark;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="768" height="538" viewBox="0 0 768 538" fill="none"><path d="M40.053 -15.9974C54.5556 79.824 77.458 200.66 191.709 109.294C292.591 28.6195 325.97 120.013 346.659 215.871C352.851 244.558 365.454 292.313 394.574 299.981C421.722 307.13 468.059 273.325 498.109 268.642C560.312 258.949 601.164 351.272 633.156 391.778C679.96 451.037 723.642 505.77 793.487 531.573" stroke="rgba(151,227,52,0.35)" stroke-width="80" stroke-linecap="round"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formWrapper {
+  flex: 2;
+  display: flex;
+
+  height: 100%;
+  padding: 60px 60px 60px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  flex-shrink: 0;
+
+  color: $white;
+
+  & .formTitleContainer {
+    position: relative;
+    max-width: 524px;
+
+    & > svg {
+      position: absolute;
+      bottom: -40px;
+      left: 200px;
+    }
+
+    & > span {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 36px */
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+
+  .inputsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+}
+
+.imageContainer {
+  pointer-events: none;
+  flex: 3;
+  position: relative;
+  height: 100%;
+  border-radius: 40px;
+  background-image: url('../../../../public/images/requestBanner/paperBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > svg {
+    position: absolute;
+    z-index: 1;
+
+    &:first-of-type {
+      top: 100px;
+      left: 40px;
+    }
+
+    &:last-of-type {
+      top: 60px;
+      left: 400px;
+    }
+  }
+
+  & .boyImg {
+    transform: translateY(-20px);
+  }
+}

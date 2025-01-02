@@ -21,7 +21,7 @@ export default function RootLayout({
         }}
       >
         <MainHeader />
-        <main style={{ height: '80vh' }}>{children}</main>
+        <main style={{ minHeight: '80vh' }}>{children}</main>
         <MainFooter />
       </body>
     </html>

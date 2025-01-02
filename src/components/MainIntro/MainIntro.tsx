@@ -4,6 +4,7 @@ import { Routes } from '@/config/routes';
 import SecondaryPurpleButton from '../common/SecondaryPurpleButton/SecondaryPurpleButton';
 import PrimaryGreenButton from '../common/PrimaryGreenButton/PrimaryGreenButton';
 import { ArrowWhiteTriangle, CurlyArrowType1, CurlyArrowType2 } from '../icons';
+import { handleScrollToForm } from '@/helpers/lib/handleScrollToForm';
 import styles from './mainIntro.module.scss';
 
 const MainIntro: React.FC = () => {
@@ -33,7 +34,11 @@ const MainIntro: React.FC = () => {
               </div>
             </div>
             <div className={styles.requestContainer}>
-              <PrimaryGreenButton title="Залишити заявку" onClick={() => {}} reversedColor />
+              <PrimaryGreenButton
+                title="Залишити заявку"
+                onClick={() => handleScrollToForm('form-container')}
+                reversedColor
+              />
               <CurlyArrowType2 />
             </div>
           </div>
