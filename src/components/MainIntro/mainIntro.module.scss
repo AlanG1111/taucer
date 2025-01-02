@@ -9,11 +9,13 @@
 }
 
 .introBackground {
-  height: 100%;
   width: 100%;
   border-radius: 40px;
   padding: 60px 60px 40px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    url('../../../public/images/bannerBg/home_banner_1.jpg') no-repeat center center;
+  background-size: cover;
   height: 720px;
   display: flex;
   gap: 24px;
