@@ -23,11 +23,11 @@ const RequestBanner: React.FC = () => {
     };
 
     if (!formData.name.trim()) {
-      errors.name = `Поле є обов'язковим для заповнення.`;
+      errors.name = 'Поле є обов\'язковим для заповнення.';
     }
 
     if (!formData.phone.trim()) {
-      errors.phone = `Поле є обов'язковим для заповнення.`;
+      errors.phone = 'Поле є обов\'язковим для заповнення.';
     } else if (!/^\+380 \d{2} \d{3} \d{2} \d{2}$/.test(formData.phone)) {
       errors.phone = 'Введіть коректний номер телефону';
     }
