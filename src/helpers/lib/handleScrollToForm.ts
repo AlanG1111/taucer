@@ -9,9 +9,6 @@ export const handleScrollToForm = (pageId: string) => {
     // Get the position of the form container relative to the top of the document
     const formPosition = formContainer.getBoundingClientRect().top + window.scrollY;
 
-    // Calculate the position to center the form on the screen
-    const centerPosition = (window.innerHeight - formHeight) / 2 + window.scrollY;
-
     // Scroll to the form with smooth animation, adjusting the scroll position to center the form
     window.scrollTo({
       top: formPosition - (window.innerHeight / 2 - formHeight / 2), // Center the form with an offset
