@@ -1,0 +1,56 @@
+@import '../../../../app/_library';
+
+.animatedButton {
+  font-family: var(--font-primary);
+  border-radius: 32px;
+  background: $dark-purple;
+  display: inline-flex;
+  height: 48px;
+  padding: 18px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.4s ease-out;
+
+  & span {
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.16px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: $purple-light;
+    border-radius: 32px;
+    z-index: -1;
+    transition: transform 0.4s ease-out;
+    transform: translateX(0%);
+  }
+
+  &:hover::before {
+    transform: translateX(100%);
+  }
+
+  &:disabled {
+    background: $grey;
+    cursor: not-allowed;
+    pointer-events: none;
+    &::before {
+      transition: none;
+    }
+  }
+}
