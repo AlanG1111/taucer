@@ -1,5 +1,6 @@
 'use client';
 
+import HomePageExcursionBanner from '@/components/HomePageExcursionBanner/HomePageExcursionBanner';
 import HomePageHowToFindUs from '@/components/HomePageHowToFindUs/HomePageHowToFindUs';
 import HomePageOurGoal from '@/components/HomePageOurGoal/HomePageOurGoal';
 import HomePagePreview from '@/components/HomePagePreview/HomePagePreview';
@@ -13,6 +14,7 @@ export default function Home() {
       <HomePagePreview />
       <HomePageHowToFindUs />
       <HomePageOurGoal />
+      <HomePageExcursionBanner />
       <HomePageRequestContainer />
     </div>
   );
