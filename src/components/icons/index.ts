@@ -12,3 +12,4 @@ export { LogoGreenBG } from './LogoGreenBG';
 export { CurlyArrowType3 } from './CurlyArrowType3';
 export { Point } from './Point';
 export { Transfer } from './Transfer';
+export { MainLogoRotated } from './MainLogoRotated';

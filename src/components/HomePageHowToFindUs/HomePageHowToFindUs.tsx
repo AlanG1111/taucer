@@ -3,6 +3,13 @@ import styles from './HomePageHowToFindUs.module.scss';
 import { Point, Transfer } from '../icons';
 
 const HomePageHowToFindUs: React.FC = () => {
+  const openGoogleMapsRoute = () => {
+    const encodedAddress = encodeURIComponent('Горбовичі, вул. Заповідна, 1, Kиїв, Україна, 08162');
+    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+
+    window.open(googleMapsUrl, '_blank');
+  };
+
   return (
     <div className={styles.sectionContainer}>
       <div className={`${styles.bannerWrapper} container`}>
@@ -35,13 +42,13 @@ const HomePageHowToFindUs: React.FC = () => {
                 </p>
               </div>
               <div className={styles.howToFindAddress}>
-                <div>
+                <div onClick={openGoogleMapsRoute}>
                   <Point />
                   <span className={styles.underlinedText}>Горбовичі, вул. Заповідна, 1, Kиїв, Україна, 08162</span>
                 </div>
                 <div>
                   <Transfer />
-                  <span>20хв від метро,  трансфер з Києва</span>
+                  <span>20хв від метро, трансфер з Києва</span>
                 </div>
               </div>
             </div>

@@ -85,6 +85,23 @@
   align-items: center;
   justify-content: space-between;
 
+  & > div:first-of-type {
+    cursor: pointer;
+
+    &:hover .underlinedText {
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+    }
+  }
+
+  & .underlinedText {
+    max-width: 260px;
+  }
+
   & > div {
     display: flex;
     align-items: center;
@@ -100,15 +117,5 @@
     letter-spacing: 0.16px;
     display: inline-block;
     max-width: 210px;
-  }
-
-  & .underlinedText {
-    max-width: 260px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
   }
 }
