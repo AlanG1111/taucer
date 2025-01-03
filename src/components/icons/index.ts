@@ -10,3 +10,5 @@ export { PurpleQuestionMark } from './PurpleQuestionMark';
 export { CurlyArrowPurple } from './CurlyArrowPurple';
 export { LogoGreenBG } from './LogoGreenBG';
 export { CurlyArrowType3 } from './CurlyArrowType3';
+export { Point } from './Point';
+export { Transfer } from './Transfer';

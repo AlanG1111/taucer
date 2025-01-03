@@ -71,7 +71,7 @@ const RequestBanner: React.FC = () => {
   };
 
   return (
-    <div className={styles.bannerWrapper} id="form-container">
+    <div className={`${styles.bannerWrapper} container`} id="form-container">
       <div className={styles.imageContainer}>
         <PurpleQuestionMark />
         <PurplePencil />
