@@ -13,3 +13,5 @@ export { CurlyArrowType3 } from './CurlyArrowType3';
 export { Point } from './Point';
 export { Transfer } from './Transfer';
 export { MainLogoRotated } from './MainLogoRotated';
+export { GreenClod } from './GreenClod';
+export { GreenStar } from './GreenStar';
