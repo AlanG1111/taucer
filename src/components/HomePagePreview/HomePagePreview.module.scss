@@ -128,3 +128,30 @@
     }
   }
 }
+
+.thirdSection {
+  gap: 16px;
+
+  & .linkWrapper {
+    width: 100%;
+
+    & > div {
+      width: 635px;
+      padding-top: 40px;
+      position: relative;
+    }
+  }
+
+  & .linkWrapper:first-of-type {
+    border-top: 4px solid $grey;
+
+    & > div {
+      margin-left: auto;
+    }
+  }
+
+  & .number {
+    padding-left: 16px;
+    left: -16px;
+  }
+}

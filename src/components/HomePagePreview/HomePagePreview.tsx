@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './HomePagePreview.module.scss';
-import { CurlyArrowType3, LogoGreenBG } from '../icons';
 import Image from 'next/image';
-import PreviewLink from './PreviewLink/PreviewLink';
 import { Routes } from '@/config/routes';
+import PreviewLink from './PreviewLink/PreviewLink';
+import { CurlyArrowType3, LogoGreenBG } from '../icons';
+import styles from './HomePagePreview.module.scss';
 
 const HomePagePreview: React.FC = () => {
   return (
@@ -75,7 +75,7 @@ const HomePagePreview: React.FC = () => {
             <div>
               <div className={styles.number}>3</div>
               <PreviewLink link={Routes.Preschool} label="Табір" bgImage="/images/homePagePreview/previewBg3.png">
-                <span style={{ maxWidth: '210px', display: 'block' }}>Канікулярний табір та табір вихідного дня</span>
+                <span style={{ maxWidth: '210px', display: 'block' }}>Канікулярний табір та табір вихідного дня</span>
               </PreviewLink>
             </div>
           </div>
@@ -88,7 +88,38 @@ const HomePagePreview: React.FC = () => {
             </div>
           </div>
         </div>
-        <div>content</div>
+        <div className={styles.thirdSection}>
+          <div className={styles.linkWrapper}>
+            <div>
+              <div className={styles.number}>5</div>
+              <PreviewLink
+                style={{ maxWidth: '635px' }}
+                link={Routes.Boarding}
+                label="бординг 6-14 років"
+                bgImage="/images/homePagePreview/previewBg5.png"
+              >
+                <span style={{ maxWidth: '310px', display: 'block' }}>
+                  Щомісячний і флексі-бординг для дітей віком від 6 до 14 років
+                </span>
+              </PreviewLink>
+            </div>
+          </div>
+          <div className={styles.linkWrapper}>
+            <div>
+              <div className={styles.number}>6</div>
+              <PreviewLink
+                style={{ maxWidth: '635px' }}
+                link={Routes.OnlineSchool}
+                label="Онлайн-школа"
+                bgImage="/images/homePagePreview/previewBg6.png"
+              >
+                <span style={{ maxWidth: '310px', display: 'block' }}>
+                  Онлайн-школа - навчання з будь-якої точки країни та світу
+                </span>
+              </PreviewLink>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

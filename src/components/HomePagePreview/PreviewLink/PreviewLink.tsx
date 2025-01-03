@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './PreviewLink.module.scss';
 import Link from 'next/link';
 import { ArrowGreenBg } from '@/components/icons';
+import styles from './PreviewLink.module.scss';
 
 type Props = {
   link: string;
   children: React.ReactNode;
   label: string;
   bgImage: string;
-  style?: any;
+  style?: React.CSSProperties;
 };
 
 const PreviewLink: React.FC<Props> = ({ link, children, label, bgImage, style }) => {
