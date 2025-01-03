@@ -8,7 +8,7 @@ type Props = {
   children: React.ReactNode;
   label: string;
   bgImage: string;
-  style: any;
+  style?: any;
 };
 
 const PreviewLink: React.FC<Props> = ({ link, children, label, bgImage, style }) => {

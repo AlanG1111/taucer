@@ -26,11 +26,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  & > div:not(:first-of-type) {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
 }
 
 .firstLink {
@@ -65,7 +60,7 @@
 
     & > div {
       position: relative;
-      max-width: 632px;
+      max-width: 610px;
       margin-left: auto;
 
       & > svg {
@@ -110,5 +105,26 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+  }
+}
+
+.secondSection {
+  border-top: 4px solid $grey;
+
+  justify-content: space-between;
+  gap: 16px;
+
+  & .number {
+    padding-left: 16px;
+    left: -16px;
+  }
+
+  & > div {
+    width: 416px;
+
+    & > div {
+      padding-top: 40px;
+      position: relative;
+    }
   }
 }

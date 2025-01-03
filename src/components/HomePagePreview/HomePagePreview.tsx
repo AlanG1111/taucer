@@ -58,7 +58,36 @@ const HomePagePreview: React.FC = () => {
             </div>
           </div>
         </div>
-        <div>content</div>
+        <div className={styles.secondSection}>
+          <div>
+            <div>
+              <div className={styles.number}>2</div>
+              <PreviewLink
+                link={Routes.HighSchool}
+                label="Школа 5-11 клас"
+                bgImage="/images/homePagePreview/previewBg2.png"
+              >
+                <span>Школа 5-11 клас</span>
+              </PreviewLink>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div className={styles.number}>3</div>
+              <PreviewLink link={Routes.Preschool} label="Табір" bgImage="/images/homePagePreview/previewBg3.png">
+                <span style={{ maxWidth: '210px', display: 'block' }}>Канікулярний табір та табір вихідного дня</span>
+              </PreviewLink>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div className={styles.number}>4</div>
+              <PreviewLink link={Routes.HorseClub} label="Кінний клуб" bgImage="/images/homePagePreview/previewBg4.png">
+                <span>Кінний клуб</span>
+              </PreviewLink>
+            </div>
+          </div>
+        </div>
         <div>content</div>
       </div>
     </div>

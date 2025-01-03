@@ -12,6 +12,7 @@ export enum Routes {
   HighSchool = '/high',
   OnlineSchool = '/online',
   Boarding = '/boarding',
+  HorseClub = '/horseClub',
 }
 
 const routes = [
