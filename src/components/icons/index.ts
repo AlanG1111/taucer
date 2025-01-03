@@ -8,3 +8,5 @@ export { ArrowWhiteTriangle } from './ArrowWhiteTriangle';
 export { PurplePencil } from './PurplePencil';
 export { PurpleQuestionMark } from './PurpleQuestionMark';
 export { CurlyArrowPurple } from './CurlyArrowPurple';
+export { LogoGreenBG } from './LogoGreenBG';
+export { CurlyArrowType3 } from './CurlyArrowType3';

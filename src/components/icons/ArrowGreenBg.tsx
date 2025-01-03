@@ -14,6 +14,7 @@ export const ArrowGreenBg: React.FC<Props> = ({ size = 40, arrowSize = 18 }) => 
     borderRadius: '50%',
     width: `${size}px`,
     height: `${size}px`,
+    position: 'relative',
   };
   return (
     <div style={wrapperStyle}>
