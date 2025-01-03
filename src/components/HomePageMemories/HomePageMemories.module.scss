@@ -1,0 +1,31 @@
+@import '../../../app/_library';
+
+.sectionWrapper {
+  padding: 100px 20px 60px 20px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+
+  & .titleContainer {
+    position: relative;
+
+    & span {
+      color: $dark-purple;
+
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      text-transform: uppercase;
+    }
+
+    & svg {
+      position: absolute;
+      margin-left: 20px;
+    }
+  }
+}
