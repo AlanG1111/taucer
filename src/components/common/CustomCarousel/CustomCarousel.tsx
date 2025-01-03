@@ -84,7 +84,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ images }) => {
           <div className={styles.linkWrapper} onClick={handlePrevious}>
             <div>
               <div>
-                <div className={styles.arrow}>
+                <div className={`${styles.arrow} ${styles.leftArrow}`}>
                   <ArrowGreenBg size={72} arrowSize={28} />
                 </div>
               </div>

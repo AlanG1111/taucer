@@ -40,7 +40,6 @@
 }
 
 .linkWrapper {
-  // display: block;
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -60,8 +59,8 @@
 
     & .arrow {
       position: absolute;
-      right: 0px;
-      bottom: 0px;
+      right: 5px;
+      bottom: -27px;
       transition: transform 0.3s ease-out;
 
       & > div {
@@ -84,6 +83,12 @@
       }
     }
   }
+}
+
+.leftArrow {
+  left: 5px !important;
+  right: unset !important;
+  transform: rotate(180deg);
 }
 
 .carouselIndicator {
