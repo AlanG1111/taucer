@@ -15,3 +15,4 @@ export { Transfer } from './Transfer';
 export { MainLogoRotated } from './MainLogoRotated';
 export { GreenClod } from './GreenClod';
 export { GreenStar } from './GreenStar';
+export { PaperClip } from './PaperClip';

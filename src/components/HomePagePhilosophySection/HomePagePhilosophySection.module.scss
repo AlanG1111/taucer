@@ -1,0 +1,126 @@
+@import '../../../app/_library';
+
+.sectionContainer {
+  padding: 100px 80px 60px 80px;
+
+  & > div {
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+.titleContainer {
+  & p {
+    color: $dark-purple;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+
+  & div {
+    margin-top: -6px;
+    width: fit-content;
+    height: 64px;
+    border-radius: 40px;
+    background: $green-light;
+    display: flex;
+    transform: rotate(-2deg);
+    padding: 35px 24px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  & span {
+    color: $white;
+    text-align: center;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.ctaContainer {
+  display: flex;
+  max-width: 632px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+  & p {
+    color: $purple-light;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+
+  & p span {
+    color: $dark-purple;
+  }
+}
+
+.imageContainer {
+  padding-bottom: 39px;
+  & > div {
+    display: flex;
+    align-items: flex-end;
+
+    border-radius: 40px;
+    width: 524px;
+    height: 580px;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%),
+      url('../../../public/images/philosophyTwoGirlsImg.png') lightgray 50% / cover no-repeat;
+  }
+}
+
+.greenBanner {
+  position: relative;
+  display: flex;
+  height: fit-content;
+  transform: rotate(-2deg) translateY(40px) scale(101%);
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22538%22%20height%3D%22204%22%20viewBox%3D%220%200%20538%20204%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M-70.2771%2083.0277C-18.3469%20161.327%2049.7934%20257.275%2073.9332%20105.079C95.2483%20-29.3074%20156.02%2033.5412%20211.524%20108.128C228.135%20130.45%20257.107%20166.218%20277.341%20155.558C296.205%20145.62%20307.475%2086.8474%20322.626%2064.4001C353.987%2017.935%20419.48%2077.1044%20456.304%2094.5472C510.177%20120.066%20560.196%20143.361%20612.101%20124.527%22%20stroke%3D%22%2381C22A%22%20stroke-opacity%3D%220.35%22%20stroke-width%3D%2280%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 40px;
+  background-color: $green-light;
+
+  & > svg {
+    position: absolute;
+    right: 32px;
+    top: -35px;
+  }
+
+  & > p {
+    color: $white;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.16px;
+  }
+}
