@@ -7,6 +7,7 @@ import HomePageOurGoal from '@/components/HomePageOurGoal/HomePageOurGoal';
 import HomePagePhilosophySection from '@/components/HomePagePhilosophySection/HomePagePhilosophySection';
 import HomePagePreview from '@/components/HomePagePreview/HomePagePreview';
 import HomePageRequestContainer from '@/components/HomePageRequestContainer/HomePageRequestContainer';
+import HomePageTrustUs from '@/components/HomePageTrustUs/HomePageTrustUs';
 import MainIntro from '@/components/MainIntro/MainIntro';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <HomePageExcursionBanner />
       <HomePagePhilosophySection />
       <HomePageMemories />
+      <HomePageTrustUs />
       <HomePageRequestContainer />
     </div>
   );
