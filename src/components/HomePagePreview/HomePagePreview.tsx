@@ -74,6 +74,7 @@ const HomePagePreview: React.FC = () => {
           <div>
             <div>
               <div className={styles.number}>3</div>
+              {/* TODO: change link */}
               <PreviewLink link={Routes.Preschool} label="Табір" bgImage="/images/homePagePreview/previewBg3.png">
                 <span style={{ maxWidth: '210px', display: 'block' }}>Канікулярний табір та табір вихідного дня</span>
               </PreviewLink>

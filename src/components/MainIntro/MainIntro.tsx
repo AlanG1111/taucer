@@ -9,9 +9,9 @@ import styles from './mainIntro.module.scss';
 
 const MainIntro: React.FC = () => {
   const directions = [
-    { route: Routes.Preschool, title: 'Початкова школа від 4 років' },
+    { route: Routes.ElementarySchoolGrades, title: 'Початкова школа від 4 років' },
     { route: Routes.HighSchool, title: 'Школа 5 - 11 клас' },
-    { route: Routes.Preschool, title: 'Табір' },
+    { route: Routes.Preschool, title: 'Табір' }, //TODO: change link
     { route: Routes.Boarding, title: 'Бординг' },
     { route: Routes.OnlineSchool, title: 'Оnline школа' },
   ];
