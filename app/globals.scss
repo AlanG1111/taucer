@@ -18,12 +18,12 @@
 @font-face {
   font-family: 'Artegra Sans Extended';
   src:
-    local('Artegra Sans Extended Medium'),
-    local('Artegra-Sans-Extended-Medium'),
+    local('Artegra Sans Extended'),
+    url('/fonts/ArtegraSansExMedium.eot?#iefix') format('embedded-opentype'),
     url('/fonts/ArtegraSansExMedium.woff2') format('woff2'),
     url('/fonts/ArtegraSansExMedium.woff') format('woff'),
     url('/fonts/ArtegraSansExMedium.ttf') format('truetype');
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -37,6 +37,10 @@ html {
 
 body {
   font-family: var(--font-primary);
+}
+
+main {
+  padding-top: 100px;
 }
 
 .container {
