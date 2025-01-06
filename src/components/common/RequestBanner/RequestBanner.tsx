@@ -23,11 +23,11 @@ const RequestBanner: React.FC = () => {
     };
 
     if (!formData.name.trim()) {
-      errors.name = 'Поле є обов\'язковим для заповнення.';
+      errors.name = 'Поле є обов&apos;язковим для заповнення.';
     }
 
     if (!formData.phone.trim()) {
-      errors.phone = 'Поле є обов\'язковим для заповнення.';
+      errors.phone = 'Поле є обов&apos;язковим для заповнення.';
     } else if (!/^\+380 \d{2} \d{3} \d{2} \d{2}$/.test(formData.phone)) {
       errors.phone = 'Введіть коректний номер телефону';
     }
@@ -71,7 +71,7 @@ const RequestBanner: React.FC = () => {
   };
 
   return (
-    <div className={`${styles.bannerWrapper} container`} id="form-container">
+    <div className={`${styles.bannerWrapper} banner-container`} id="form-container">
       <div className={styles.imageContainer}>
         <PurpleQuestionMark />
         <PurplePencil />

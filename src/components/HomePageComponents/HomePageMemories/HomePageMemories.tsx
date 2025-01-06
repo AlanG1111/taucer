@@ -16,7 +16,7 @@ export const HomePageMemories: React.FC = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.sectionContainer}>
-        <div className={`${styles.titleContainer} container`}>
+        <div className={`${styles.titleContainer} banner-container`}>
           <span>Наші спогади</span>
           <CurlyArrowType4 />
         </div>

@@ -12,7 +12,7 @@ export const HomePageHowToFindUs: React.FC = () => {
 
   return (
     <div className={styles.sectionContainer}>
-      <div className={`${styles.bannerWrapper} container`}>
+      <div className={`${styles.bannerWrapper} banner-container`}>
         <div className={styles.bannerContainer}>
           <div className={styles.purpleBanner}>
             <div>

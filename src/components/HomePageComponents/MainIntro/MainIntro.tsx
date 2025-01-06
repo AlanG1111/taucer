@@ -18,7 +18,7 @@ export const MainIntro: React.FC = () => {
 
   return (
     <section className={styles.introWrapper}>
-      <div className={`${styles.introBackground} container`}>
+      <div className={`${styles.introBackground} banner-container`}>
         {/* Promo Section */}
         <div className={styles.promoSection}>
           <div>

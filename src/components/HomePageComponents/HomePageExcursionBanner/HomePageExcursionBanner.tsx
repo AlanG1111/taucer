@@ -8,7 +8,7 @@ import styles from './HomePageExcursionBanner.module.scss';
 export const HomePageExcursionBanner: React.FC = () => {
   return (
     <div className={styles.sectionContainer}>
-      <div className="container">
+      <div className="banner-container">
         <div className={styles.bannerWrapper}>
           <div className={styles.formWrapper}>
             <div className={styles.formTitleContainer}>
