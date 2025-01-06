@@ -1,29 +1,14 @@
 @import './_reset';
 @import './_library';
 
-// @font-face {
-//   font-family: 'Artegra Sans Extended';
-//   src: url('/fonts/ArtegraSansExRegular.eot');
-//   src:
-//     local('Artegra Sans Extended'),
-//     local('ArtegraSansExRegular'),
-//     url('/fonts/ArtegraSansExRegular.eot?#iefix') format('embedded-opentype'),
-//     url('/fonts/ArtegraSansExRegular.woff2') format('woff2'),
-//     url('/fonts/ArtegraSansExRegular.woff') format('woff'),
-//     url('/fonts/ArtegraSansExRegular.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 @font-face {
   font-family: 'Artegra Sans Extended';
   src:
     local('Artegra Sans Extended'),
-    url('/fonts/ArtegraSansExMedium.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/ArtegraSansExMedium.woff2') format('woff2'),
-    url('/fonts/ArtegraSansExMedium.woff') format('woff'),
-    url('/fonts/ArtegraSansExMedium.ttf') format('truetype');
+    url('/fonts/ArtegraSansExSemiBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ArtegraSansExSemiBold.woff2') format('woff2'),
+    url('/fonts/ArtegraSansExSemiBold.woff') format('woff'),
+    url('/fonts/ArtegraSansExSemiBold.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
