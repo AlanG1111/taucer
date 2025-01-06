@@ -1,0 +1,115 @@
+@import '../../../../app/_library';
+
+.sectionContainer {
+  padding: 160px 20px 60px 20px;
+}
+
+.bannerWrapper {
+  border-radius: 40px;
+  background-color: $dark-purple;
+
+  margin: 0 auto;
+  height: 488px; //temp
+
+  position: relative;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22749%22%20height%3D%22488%22%20viewBox%3D%220%200%20749%20488%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M709.008%20-56.8273C708.141%2040.0764%20702.48%20162.926%20576.514%2088.5439C465.287%2022.8652%20445.11%20118.041%20438.123%20215.85C436.032%20245.122%20430.279%20294.172%20402.531%20305.86C376.663%20316.755%20326.031%20289.806%20295.624%20289.397C232.681%20288.549%20205.237%20385.697%20179.268%20430.298C141.277%20495.547%20105.74%20555.878%2040.2282%20591.247%22%20stroke%3D%22%239989C7%22%20stroke-opacity%3D%220.35%22%20stroke-width%3D%2280%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: left;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  pointer-events: none;
+  flex: 3;
+  position: relative;
+  height: 100%;
+  border-radius: 40px;
+  background-image: url('/images/excursionBanner/paperBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  & > svg {
+    position: absolute;
+    z-index: 1;
+
+    &:first-of-type {
+      top: 100px;
+      left: 340px;
+    }
+
+    &:last-of-type {
+      bottom: 130px;
+      right: 20px;
+    }
+  }
+
+  & .girlImg {
+    transform: translateY(-65px);
+  }
+
+  & .paperImg {
+    position: absolute;
+    top: 80px;
+  }
+}
+
+.formWrapper {
+  flex: 2;
+  display: flex;
+
+  height: 100%;
+  padding: 60px 0px 60px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+
+  color: $white;
+
+  & .formTitleContainer {
+    max-width: 524px;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+
+  & .ctaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+
+    & span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.08px;
+    }
+
+    & svg {
+      position: absolute;
+      top: 10px;
+      right: -70px;
+    }
+
+    & > div {
+      position: relative;
+      max-width: 330px;
+    }
+  }
+}

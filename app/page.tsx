@@ -1,14 +1,16 @@
 'use client';
 
-import HomePageExcursionBanner from '@/components/HomePageExcursionBanner/HomePageExcursionBanner';
-import HomePageHowToFindUs from '@/components/HomePageHowToFindUs/HomePageHowToFindUs';
-import HomePageMemories from '@/components/HomePageMemories/HomePageMemories';
-import HomePageOurGoal from '@/components/HomePageOurGoal/HomePageOurGoal';
-import HomePagePhilosophySection from '@/components/HomePagePhilosophySection/HomePagePhilosophySection';
-import HomePagePreview from '@/components/HomePagePreview/HomePagePreview';
-import HomePageRequestContainer from '@/components/HomePageRequestContainer/HomePageRequestContainer';
-import HomePageTrustUs from '@/components/HomePageTrustUs/HomePageTrustUs';
-import MainIntro from '@/components/MainIntro/MainIntro';
+import { RequestContainerWithBG } from '@/components/common/RequestContainerWithBG/RequestContainerWithBG';
+import {
+  HomePagePreview,
+  HomePageMemories,
+  HomePageTrustUs,
+  HomePagePhilosophySection,
+  MainIntro,
+  HomePageHowToFindUs,
+  HomePageOurGoal,
+  HomePageExcursionBanner,
+} from '@/components/HomePageComponents';
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
       <HomePagePhilosophySection />
       <HomePageMemories />
       <HomePageTrustUs />
-      <HomePageRequestContainer />
+      <RequestContainerWithBG />
     </div>
   );
 }
