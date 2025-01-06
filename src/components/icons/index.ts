@@ -1,18 +1,19 @@
 export { MainLogo } from './MainLogo';
 export { InstIcon } from './InstIcon';
 export { ArrowDown } from './ArrowDown';
-export { CurlyArrowType1 } from './CurlyArrowType1';
-export { CurlyArrowType2 } from './CurlyArrowType2';
-export { CurlyArrowType3 } from './CurlyArrowType3';
-export { CurlyArrowType4 } from './CurlyArrowType4';
-export { CurlyArrowType5 } from './CurlyArrowType5';
-export { CurlyArrowType6 } from './CurlyArrowType6';
-export { CurlyArrowType7 } from './CurlyArrowType7';
+export {
+  CurlyArrowType1,
+  CurlyArrowType2,
+  CurlyArrowType3,
+  CurlyArrowType4,
+  CurlyArrowType5,
+  CurlyArrowType6,
+  CurlyArrowType7,CurlyArrowPurple
+} from './CurlyArrows';
 export { ArrowGreenBg } from './ArrowGreenBg';
 export { ArrowWhiteTriangle } from './ArrowWhiteTriangle';
 export { PurplePencil } from './PurplePencil';
 export { PurpleQuestionMark } from './PurpleQuestionMark';
-export { CurlyArrowPurple } from './CurlyArrowPurple';
 export { LogoGreenBG } from './LogoGreenBG';
 export { Point } from './Point';
 export { Transfer } from './Transfer';

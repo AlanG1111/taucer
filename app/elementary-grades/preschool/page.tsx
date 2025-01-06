@@ -5,13 +5,13 @@ import {
   PreSchoolPageMemories,
   PreSchoolQuestions,
   PreSchoolRequestContainer,
-  PreschoolIntro,
+  PreSchoolIntro,
 } from '@/components/PreSchoolComponents/index';
 
 export default function preschool() {
   return (
     <div>
-      <PreschoolIntro />
+      <PreSchoolIntro />
       <PreSchoolRequestContainer />
       <PreSchoolPageMemories />
       <PreSchoolQuestions />
