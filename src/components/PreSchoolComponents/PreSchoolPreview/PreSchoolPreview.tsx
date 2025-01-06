@@ -29,10 +29,14 @@ export const PreSchoolPreview: React.FC = () => {
                     <span>Вивчаємо</span>
                   </div>
                 </div>
-                <CurlyArrowType9 />
+                <div style={{ paddingTop: '24px' }}>
+                  <CurlyArrowType9 />
+                </div>
               </div>
               <div>
-                <CurlyArrowType9 />
+                <div style={{ paddingTop: '18px' }}>
+                  <CurlyArrowType9 />
+                </div>
                 <div className={`${styles.darkPurpleBox} ${styles.box}`}>
                   <div>
                     <span>Закріплюємо</span>
