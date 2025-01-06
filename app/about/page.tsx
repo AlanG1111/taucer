@@ -3,5 +3,5 @@
 import React from 'react';
 
 export default function about() {
-  return <main>abot</main>;
+  return <div>about</div>;
 }
