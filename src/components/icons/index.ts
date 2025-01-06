@@ -8,7 +8,8 @@ export {
   CurlyArrowType4,
   CurlyArrowType5,
   CurlyArrowType6,
-  CurlyArrowType7,CurlyArrowPurple
+  CurlyArrowType7,
+  CurlyArrowPurple,
 } from './CurlyArrows';
 export { ArrowGreenBg } from './ArrowGreenBg';
 export { ArrowWhiteTriangle } from './ArrowWhiteTriangle';
@@ -23,3 +24,4 @@ export { GreenStar } from './GreenStar';
 export { PaperClip } from './PaperClip';
 export { RatingStar } from './RatingStar';
 export { Snake } from './Snake';
+export { Clinch } from './Clinch';
