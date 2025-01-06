@@ -7,6 +7,7 @@ export { CurlyArrowType3 } from './CurlyArrowType3';
 export { CurlyArrowType4 } from './CurlyArrowType4';
 export { CurlyArrowType5 } from './CurlyArrowType5';
 export { CurlyArrowType6 } from './CurlyArrowType6';
+export { CurlyArrowType7 } from './CurlyArrowType7';
 export { ArrowGreenBg } from './ArrowGreenBg';
 export { ArrowWhiteTriangle } from './ArrowWhiteTriangle';
 export { PurplePencil } from './PurplePencil';
