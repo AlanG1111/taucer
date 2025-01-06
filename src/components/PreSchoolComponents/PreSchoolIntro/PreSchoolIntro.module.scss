@@ -23,13 +23,13 @@
   &:first-of-type {
     background:
       linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%),
-      url('/images/preschoolPage/introBannerBg1.jpeg') lightgray 50% / cover no-repeat;
+      url('/images/preschoolPage/introBannerBg1.webp') lightgray 50% / cover no-repeat;
   }
 
   &:last-of-type {
     background:
       linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%),
-      url('/images/preschoolPage/introBannerBg2.jpg') lightgray 50% / cover no-repeat;
+      url('/images/preschoolPage/introBannerBg2.webp') lightgray 50% / cover no-repeat;
   }
 }
 
