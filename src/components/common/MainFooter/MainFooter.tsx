@@ -12,11 +12,11 @@ const MainFooter: React.FC = () => {
 
   const renderNavLinks = (routes: { route: string; label: string }[]) =>
     routes.map(({ route, label }) => (
-      <li key={route} role="menuitem">
+      <div key={route} role="menuitem">
         <Link href={route} passHref className={styles.menuItem}>
           {label}
         </Link>
-      </li>
+      </div>
     ));
 
   return (
@@ -33,11 +33,11 @@ const MainFooter: React.FC = () => {
           <nav>
             <div>
               <span className={styles.footerNavTitle}>Напрямки:</span>
-              <ul>{renderNavLinks(schoolRoutes)}</ul>
+              <div className={styles.menuList}>{renderNavLinks(schoolRoutes)}</div>
             </div>
             <div>
               <span className={styles.footerNavTitle}>Загальне:</span>
-              <ul>{renderNavLinks(basicRoutes)}</ul>
+              <div className={styles.menuList}>{renderNavLinks(basicRoutes)}</div>
             </div>
           </nav>
 

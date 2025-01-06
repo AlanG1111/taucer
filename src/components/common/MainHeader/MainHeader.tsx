@@ -51,12 +51,7 @@ const MainHeader: React.FC = () => {
         <nav className={styles.navigationContainer}>
           {/* Dropdown */}
           <div>
-            <div
-              className={`${styles.menuItem} ${styles.dropDownTitle}`}
-              onClick={toggleExpansion}
-              aria-expanded={expanded}
-              aria-controls="dropdown-menu"
-            >
+            <div className={`${styles.menuItem} ${styles.dropDownTitle}`} onClick={toggleExpansion}>
               <span>Напрямки</span>
               <ArrowDown />
             </div>
