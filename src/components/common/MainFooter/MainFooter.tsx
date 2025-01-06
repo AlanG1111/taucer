@@ -12,7 +12,7 @@ const MainFooter: React.FC = () => {
 
   const renderNavLinks = (routes: { route: string; label: string }[]) =>
     routes.map(({ route, label }) => (
-      <div key={route} role="menuitem">
+      <div key={route}>
         <Link href={route} passHref className={styles.menuItem}>
           {label}
         </Link>
