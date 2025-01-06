@@ -18,8 +18,8 @@ export const PreSchoolPreview: React.FC = () => {
           <div className={styles.contentContainer}>
             <div className={styles.description}>
               <p>
-                Навчання відбувається на основі інтегрованої програми <span>"Mr. Leader"</span>, що{' '}
-                <span>затверджена Міністерством освіти і науки.</span>
+                Навчання відбувається на основі інтегрованої програми <span>&quot;Mr. Leader&quot;</span>, що
+                <span> затверджена Міністерством освіти і науки.</span>
               </p>
             </div>
             <div className={styles.purpleBoxesWrapper}>
@@ -54,7 +54,7 @@ export const PreSchoolPreview: React.FC = () => {
             <div className={styles.greenBanner}>
               <p>
                 Головною метою цієї програми є створення оптимальних умов для всебічного розвитку <br />
-                та цілісного становлення особистості в різних аспектах, таких як: фізична,  інтелектуальна, емоційна та
+                та цілісного становлення особистості в різних аспектах, таких як: фізична, інтелектуальна, емоційна та
                 духовна сфери.
               </p>
               <Clinch />
