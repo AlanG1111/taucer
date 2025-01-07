@@ -2,13 +2,15 @@
 
 import React from 'react';
 import { PreSchoolIntro, PreSchoolPreview } from '@/components/PreSchoolComponents/index';
-import { PriceSection, RequestContainer, FAQ, PhotoSlider } from '@/components/common';
+import { PriceSection, RequestContainer, FAQ, PhotoSlider, ListOfClubs } from '@/components/common';
 
 export default function preschool() {
   return (
     <div>
       <PreSchoolIntro />
       <PreSchoolPreview />
+      <ListOfClubs />
+      <div>schedule</div>
       <PriceSection prices={prices} />
       <RequestContainer />
       <PhotoSlider images={images} />
