@@ -167,7 +167,7 @@
     left: -130px;
   }
 
-  & span {
+  & > div:first-of-type span {
     text-align: center;
     display: inline-block;
     width: 100%;

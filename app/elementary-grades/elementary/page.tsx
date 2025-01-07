@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
-import { FAQ, PhotoSlider, PriceSection, RequestContainer } from '@/components/common';
+import { FAQ, ListOfClubs, PhotoSlider, PriceSection, RequestContainer } from '@/components/common';
 
 export default function elementary() {
   return (
     <div>
+      <ListOfClubs />
+      schedule
       <PriceSection prices={prices} />
       <RequestContainer />
       <PhotoSlider images={images} />
