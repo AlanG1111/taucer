@@ -1,0 +1,122 @@
+@import '../../../../app/_library';
+
+.sectionContainer {
+  padding: 100px 80px 60px;
+}
+
+.titleContainer {
+  width: 100%;
+  & > div {
+    position: relative;
+    width: max-content;
+  }
+
+  & svg {
+    position: absolute;
+    right: -180px;
+    top: 15px;
+  }
+
+  & span {
+    color: $dark-purple;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+}
+
+.scheduleWrapper {
+  color: $white;
+  position: relative;
+  border-radius: 40px;
+  background: $purple-light;
+  padding: 60px;
+  width: max-content;
+  margin: 115px auto 0;
+
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="848" height="643" viewBox="0 0 848 643" fill="none"%3E%3Cpath d="M835.014 645.234C821.387 534.135 798.877 393.884 664.008 495.669C544.92 585.543 509.357 478.945 488.59 367.604C482.375 334.283 469.378 278.74 436.01 268.944C404.901 259.811 350.307 297.34 315.463 301.773C243.338 310.95 199.178 203.036 163.561 155.234C111.455 85.3023 62.8067 20.6961 -16.9881 -11.3561" stroke="%236A51A2" stroke-opacity="0.35" stroke-width="80" stroke-linecap="round"/%3E%3C/svg%3E');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.wideWrapper {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1280" height="722" viewBox="0 0 1280 722" fill="none"%3E%3Cpath d="M1300.08 681.058C1253.13 538.709 1186.71 360.109 1031.65 521.157C894.729 663.36 819.445 531.451 762.828 390.27C745.884 348.018 714.096 278.137 666.715 272.272C622.542 266.804 558.826 327.195 513.129 340.232C418.538 367.217 331.358 235.377 271.158 180.314C183.087 99.7593 101.036 25.4458 -14.4919 0.147952" stroke="%236A51A2" stroke-opacity="0.35" stroke-width="80" stroke-linecap="round"/%3E%3C/svg%3E');
+  }
+
+  & svg {
+    position: absolute;
+    top: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  & .holes {
+    top: 9px;
+  }
+
+  & .spring {
+    top: -35px;
+    left: 20px;
+  }
+}
+
+.scheduleContainer {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+
+  & .timeContainer {
+    height: 40px;
+    transform: rotate(-0.028deg);
+    padding: 5px 16px 16px;
+    gap: 10px;
+    border-radius: 40px;
+    background: $green-light;
+
+    & > span {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+    }
+  }
+
+  & .infoContainer {
+    max-width: 423px; //only in small calendars, add wide width
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+
+    & span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.16px;
+      text-transform: uppercase;
+    }
+
+    & span.description {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.14px;
+      text-transform: none;
+    }
+  }
+
+  &:not(:first-of-type) {
+    border-top: 2px solid $grey;
+  }
+}

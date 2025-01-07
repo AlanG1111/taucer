@@ -2,7 +2,15 @@
 
 import React from 'react';
 import { PreSchoolIntro, PreSchoolPreview } from '@/components/PreSchoolComponents/index';
-import { PriceSection, RequestContainer, FAQ, PhotoSlider, ListOfClubs } from '@/components/common';
+import {
+  PriceSection,
+  RequestContainer,
+  FAQ,
+  PhotoSlider,
+  ListOfClubs,
+  ScheduleSection,
+  SchoolType,
+} from '@/components/common';
 
 export default function preschool() {
   return (
@@ -10,7 +18,7 @@ export default function preschool() {
       <PreSchoolIntro />
       <PreSchoolPreview />
       <ListOfClubs />
-      <div>schedule</div>
+      <ScheduleSection schoolType={SchoolType.Elementary} schedule={schedule} />
       <PriceSection prices={prices} />
       <RequestContainer />
       <PhotoSlider images={images} />
@@ -18,6 +26,37 @@ export default function preschool() {
     </div>
   );
 }
+
+const schedule = [
+  {
+    time: '09:00 - 10:00',
+    title: 'Зустріч дітей',
+    description: 'Ранкове коло та сніданок.',
+  },
+  {
+    time: '10:00 - 13:00',
+    title: 'Інтегровані заняття',
+    description: 'Заняття за програмою, прогулянка, перший перекус, вивчення іноземної мови.',
+  },
+  {
+    time: '13:30 - 14:00',
+    title: 'Обід',
+  },
+  {
+    time: '14:00 - 15:30',
+    title: 'Відпочинок та прогулянка',
+  },
+  {
+    time: '15:30 - 17:30',
+    title: 'Розвиваючі заняття на вибір',
+    description:
+      'Дитяче програмування, лего-конструювання, хореографія, гімнастика, творча студія, футбол, спортивні ігри, настільний теніс, верхова їзда.',
+  },
+  {
+    time: '17:30 - 18:00',
+    title: 'Вечеря та прогулянка',
+  },
+];
 
 const images = [
   'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',

@@ -8,3 +8,4 @@ export { CurlyArrowType6 } from './CurlyArrowType6';
 export { CurlyArrowType7 } from './CurlyArrowType7';
 export { CurlyArrowType8 } from './CurlyArrowType8';
 export { CurlyArrowType9 } from './CurlyArrowType9';
+export { CurlyArrowType10 } from './CurlyArrowType10';

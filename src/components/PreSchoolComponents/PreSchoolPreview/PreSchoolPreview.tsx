@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PreSchoolPreview.module.scss';
-import { CurlyArrowType9 } from '@/components/icons/CurlyArrows';
+import { CurlyArrowType9 } from '@/components/icons';
 import { Clinch } from '@/components/icons';
 
 export const PreSchoolPreview: React.FC = () => {

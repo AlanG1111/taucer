@@ -9,6 +9,9 @@ export {
   CurlyArrowType5,
   CurlyArrowType6,
   CurlyArrowType7,
+  CurlyArrowType8,
+  CurlyArrowType9,
+  CurlyArrowType10,
   CurlyArrowPurple,
 } from './CurlyArrows';
 export { ArrowGreenBg } from './ArrowGreenBg';

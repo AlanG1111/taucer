@@ -1,13 +1,21 @@
 'use client';
 
 import React from 'react';
-import { FAQ, ListOfClubs, PhotoSlider, PriceSection, RequestContainer } from '@/components/common';
+import {
+  FAQ,
+  ListOfClubs,
+  PhotoSlider,
+  PriceSection,
+  RequestContainer,
+  ScheduleSection,
+  SchoolType,
+} from '@/components/common';
 
 export default function high() {
   return (
     <div>
       <ListOfClubs />
-      schedule
+      <ScheduleSection schoolType={SchoolType.Elementary} schedule={schedule} />
       <PriceSection prices={prices} />
       <RequestContainer />
       <PhotoSlider images={images} />
@@ -15,6 +23,40 @@ export default function high() {
     </div>
   );
 }
+
+//TODO: add schedule
+const schedule = [
+  {
+    time: '',
+    title: '',
+    description: '',
+  },
+  {
+    time: '',
+    title: '',
+    description: '',
+  },
+  {
+    time: '',
+    title: '',
+    description: '',
+  },
+  {
+    time: '',
+    title: '',
+    description: '',
+  },
+  {
+    time: '',
+    title: '',
+    description: '',
+  },
+  {
+    time: '',
+    title: '',
+    description: '',
+  },
+];
 
 const images = [
   'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',

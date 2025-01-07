@@ -4,6 +4,7 @@ export { RequestContainerWithBG } from './RequestContainerWithBG/RequestContaine
 export { FAQ } from './FAQ/FAQ';
 export { PhotoSlider } from './PhotoSlider/PhotoSlider';
 export { ListOfClubs } from './ListOfClubs/ListOfClubs';
+export { ScheduleSection, SchoolType } from './ScheduleSection/ScheduleSection';
 
 export {
   CircularSpinner,
