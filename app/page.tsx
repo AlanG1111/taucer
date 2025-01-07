@@ -1,6 +1,6 @@
 'use client';
 
-import { RequestContainerWithBG } from '@/components/common/RequestContainerWithBG/RequestContainerWithBG';
+import { RequestContainerWithBG } from '@/components/common';
 import {
   HomePagePreview,
   HomePageMemories,

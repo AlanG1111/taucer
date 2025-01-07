@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ElementaryGradesContainer from '@/components/ElementaryGradesContainer/ElementaryGradesContainer';
-import { RequestContainerWithBG } from '@/components/common/RequestContainerWithBG/RequestContainerWithBG';
+import { RequestContainerWithBG } from '@/components/common';
 
 export default function elementaryGrades() {
   return (
