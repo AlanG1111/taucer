@@ -25,3 +25,4 @@ export { PaperClip } from './PaperClip';
 export { RatingStar } from './RatingStar';
 export { Snake } from './Snake';
 export { Clinch } from './Clinch';
+export { CircleType1, CircleType2 } from './Cirles';
