@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './spinner.module.scss';
 
-const CircularSpinner: React.FC = () => {
+export const CircularSpinner: React.FC = () => {
   return (
     <div className={styles.spinnerContainer}>
       <div></div>
@@ -11,5 +11,3 @@ const CircularSpinner: React.FC = () => {
     </div>
   );
 };
-
-export default CircularSpinner;

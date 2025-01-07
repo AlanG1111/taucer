@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PreSchoolIntro.module.scss';
 import { handleScrollToForm } from '@/helpers/lib/handleScrollToForm';
-import PrimaryPurpleButton from '@/components/common/PrimaryPurpleButton/PrimaryPurpleButton';
+import { PrimaryPurpleButton } from '@/components/common/index';
 import { CurlyArrowType8 } from '@/components/icons/CurlyArrows';
 
 export const PreSchoolIntro: React.FC = () => {

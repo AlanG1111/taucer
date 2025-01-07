@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from './accordion.module.scss';
@@ -7,7 +9,7 @@ type Props = {
   text: string;
 };
 
-const CustomAccordion: React.FC<Props> = ({ title, text }) => {
+export const CustomAccordion: React.FC<Props> = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
   const onClick = () => {
     setIsOpen(!isOpen);
@@ -54,5 +56,3 @@ const CustomAccordion: React.FC<Props> = ({ title, text }) => {
     </div>
   );
 };
-
-export default CustomAccordion;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CurlyArrowType7 } from '@/components/icons';
-import CustomAccordion from '@/components/common/CustomAccordion/CustomAccordion';
+import { CustomAccordion } from '../lib';
 import styles from './FAQ.module.scss';
 
 type QuestionType = {

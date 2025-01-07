@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import ReactPhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -12,7 +14,7 @@ type Props = {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const CustomInput: React.FC<Props> = ({ title, placeholder, errorMsg, type = 'text', value = '', onChange }) => {
+export const CustomInput: React.FC<Props> = ({ title, placeholder, errorMsg, type = 'text', value = '', onChange }) => {
   const [isActive, setIsActive] = useState(false);
 
   // Determine if the input is filled
@@ -61,5 +63,3 @@ const CustomInput: React.FC<Props> = ({ title, placeholder, errorMsg, type = 'te
     </div>
   );
 };
-
-export default CustomInput;

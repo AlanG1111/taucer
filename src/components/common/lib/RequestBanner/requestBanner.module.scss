@@ -1,4 +1,4 @@
-@import '../../../../app/_library';
+@import '../../../../../app/_library';
 .bannerWrapper {
   margin: 0 auto;
   border-radius: 40px;
@@ -75,7 +75,7 @@
   position: relative;
   height: 100%;
   border-radius: 40px;
-  background-image: url('../../../../public/images/requestBanner/paperBg.png');
+  background-image: url('/images/requestBanner/paperBg.png');
   background-repeat: no-repeat;
   background-size: cover;
 

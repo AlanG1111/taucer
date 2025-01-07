@@ -1,11 +1,12 @@
+'use client';
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { CurlyArrowPurple, PurplePencil, PurpleQuestionMark } from '@/components/icons';
-import PrimaryPurpleButton from '../PrimaryPurpleButton/PrimaryPurpleButton';
-import CustomInput from '../CustomInput/CustomInput';
+import { CustomInput, PrimaryPurpleButton } from '..';
 import styles from './requestBanner.module.scss';
 
-const RequestBanner: React.FC = () => {
+export const RequestBanner: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -23,11 +24,11 @@ const RequestBanner: React.FC = () => {
     };
 
     if (!formData.name.trim()) {
-      errors.name = 'Поле є обов&apos;язковим для заповнення.';
+      errors.name = 'Поле є обов`язковим для заповнення.';
     }
 
     if (!formData.phone.trim()) {
-      errors.phone = 'Поле є обов&apos;язковим для заповнення.';
+      errors.phone = 'Поле є обов`язковим для заповнення.';
     } else if (!/^\+380 \d{2} \d{3} \d{2} \d{2}$/.test(formData.phone)) {
       errors.phone = 'Введіть коректний номер телефону';
     }
@@ -114,5 +115,3 @@ const RequestBanner: React.FC = () => {
     </div>
   );
 };
-
-export default RequestBanner;

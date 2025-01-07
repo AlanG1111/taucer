@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import SecondaryPurpleButton from '../../common/SecondaryPurpleButton/SecondaryPurpleButton';
+import { SecondaryPurpleButton } from '@/components/common';
 import { Routes } from '@/config/routes';
-import styles from './HomePagePhilosophySection.module.scss';
 import { PaperClip } from '../../icons';
+import styles from './HomePagePhilosophySection.module.scss';
 
 export const HomePagePhilosophySection: React.FC = () => {
   return (

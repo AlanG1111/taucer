@@ -8,7 +8,7 @@ type Props = {
   reversedColor?: boolean;
 };
 
-const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = false, reversedColor = false }) => {
+export const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = false, reversedColor = false }) => {
   return (
     <button
       className={`${styles.animatedButton} ${reversedColor ? styles.reversed : ''}`}
@@ -19,5 +19,3 @@ const PrimaryGreenButton: React.FC<Props> = ({ title, onClick, disabled = false,
     </button>
   );
 };
-
-export default PrimaryGreenButton;

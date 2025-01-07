@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { Routes } from '@/config/routes';
-import SecondaryPurpleButton from '../../common/SecondaryPurpleButton/SecondaryPurpleButton';
-import PrimaryGreenButton from '../../common/PrimaryGreenButton/PrimaryGreenButton';
 import { ArrowWhiteTriangle, CurlyArrowType1, CurlyArrowType2 } from '../../icons';
 import { handleScrollToForm } from '@/helpers/lib/handleScrollToForm';
+import { SecondaryPurpleButton, PrimaryGreenButton } from '@/components/common';
 import styles from './mainIntro.module.scss';
 
 export const MainIntro: React.FC = () => {

@@ -8,7 +8,7 @@ type Props = {
   disabled?: boolean;
 };
 
-const SecondaryPurpleButton: React.FC<Props> = ({ title, onClick, disabled = false }) => {
+export const SecondaryPurpleButton: React.FC<Props> = ({ title, onClick, disabled = false }) => {
   return (
     <button className={styles.animatedButton} onClick={onClick} disabled={disabled}>
       <span>{title}</span>
@@ -18,5 +18,3 @@ const SecondaryPurpleButton: React.FC<Props> = ({ title, onClick, disabled = fal
     </button>
   );
 };
-
-export default SecondaryPurpleButton;

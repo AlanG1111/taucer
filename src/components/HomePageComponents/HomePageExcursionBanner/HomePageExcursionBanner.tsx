@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { handleScrollToForm } from '@/helpers/lib/handleScrollToForm';
-import PrimaryGreenButton from '../../common/PrimaryGreenButton/PrimaryGreenButton';
 import { CurlyArrowPurple, GreenClod, GreenStar } from '../../icons';
+import { PrimaryGreenButton } from '@/components/common';
 import styles from './HomePageExcursionBanner.module.scss';
 
 export const HomePageExcursionBanner: React.FC = () => {

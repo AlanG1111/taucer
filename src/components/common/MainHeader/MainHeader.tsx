@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDown, MainLogo } from '@/components/icons';
 import { basicRoutes, Routes, schoolRoutes } from '@/config/routes';
-import GreenButton from '@/components/common/PrimaryGreenButton/PrimaryGreenButton';
 import { handleScrollToForm } from '@/helpers/lib/handleScrollToForm';
+import { PrimaryGreenButton } from '../lib';
 import styles from './mainHeader.module.scss';
 
 const MainHeader: React.FC = () => {
@@ -87,7 +87,7 @@ const MainHeader: React.FC = () => {
         </nav>
 
         {/* CTA */}
-        <GreenButton title="Залишити заявку" onClick={handleLRequestClick} />
+        <PrimaryGreenButton title="Залишити заявку" onClick={handleLRequestClick} />
       </div>
     </header>
   );

@@ -1,4 +1,4 @@
-import CircularSpinner from '@/components/common/CircularSpinner/CircularSpinner';
+import { CircularSpinner } from '@/components/common';
 
 const Loading = () => {
   return (

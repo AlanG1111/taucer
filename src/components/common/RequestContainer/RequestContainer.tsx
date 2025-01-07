@@ -1,5 +1,5 @@
 import React from 'react';
-import RequestBanner from '@/components/common/RequestBanner/RequestBanner';
+import { RequestBanner } from '../lib';
 import styles from './RequestContainer.module.scss';
 
 export const RequestContainer: React.FC = () => {

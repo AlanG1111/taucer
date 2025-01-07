@@ -1,4 +1,4 @@
-@import '../../../../app/_library';
+@import '../../../../../app/_library';
 
 .animatedButton {
   font-family: var(--font-primary);
@@ -6,10 +6,10 @@
   background: $dark-purple;
   display: inline-flex;
   height: 48px;
-  padding: 4px 4px 4px 24px;
-  justify-content: space-between;
+  padding: 18px 32px;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   flex-shrink: 0;
   border: none;
   cursor: pointer;
@@ -19,13 +19,12 @@
   transition: color 0.4s ease-out;
 
   & span {
-    text-align: center;
     color: $white;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.16px;
   }
 
   &::before {
@@ -44,14 +43,6 @@
 
   &:hover::before {
     transform: translateX(100%);
-  }
-
-  & .arrow {
-    transition: transform 0.3s ease-out;
-  }
-
-  &:hover .arrow {
-    transform: rotate(45deg);
   }
 
   &:disabled {
