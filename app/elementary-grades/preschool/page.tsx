@@ -4,11 +4,10 @@ import React from 'react';
 import {
   PreSchoolPageMemories,
   PreSchoolQuestions,
-  PreSchoolRequestContainer,
   PreSchoolIntro,
   PreSchoolPreview,
 } from '@/components/PreSchoolComponents/index';
-import { PriceSection } from '@/components/common';
+import { PriceSection, RequestContainer } from '@/components/common';
 
 export default function preschool() {
   const prices = {
@@ -29,7 +28,7 @@ export default function preschool() {
       <PreSchoolIntro />
       <PreSchoolPreview />
       <PriceSection prices={prices} />
-      <PreSchoolRequestContainer />
+      <RequestContainer />
       <PreSchoolPageMemories />
       <PreSchoolQuestions />
     </div>

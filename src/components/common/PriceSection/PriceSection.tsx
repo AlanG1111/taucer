@@ -25,6 +25,9 @@ const Underline = React.memo(() => (
   </svg>
 ));
 
+Underline.displayName = 'Underline';
+
+//TODO: add bg
 export const PriceSection: React.FC<Props> = ({ prices }) => {
   const { month, year } = prices;
   return (

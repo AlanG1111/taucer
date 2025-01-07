@@ -1,8 +1,8 @@
 import React from 'react';
 import RequestBanner from '@/components/common/RequestBanner/RequestBanner';
-import styles from './PreSchoolRequestContainer.module.scss';
+import styles from './RequestContainer.module.scss';
 
-export const PreSchoolRequestContainer: React.FC = () => {
+export const RequestContainer: React.FC = () => {
   return (
     <div className={styles.sectionContainer}>
       <RequestBanner />
