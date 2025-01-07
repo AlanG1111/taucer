@@ -8,7 +8,7 @@ type Props = {
 };
 
 const CustomAccordion: React.FC<Props> = ({ title, text }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(true);
   const onClick = () => {
     setIsOpen(!isOpen);
   };
@@ -46,7 +46,7 @@ const CustomAccordion: React.FC<Props> = ({ title, text }) => {
             transition={{ type: 'spring', duration: 0.4, bounce: 0 }}
           >
             <div style={{ paddingTop: '8px' }}>
-              <p>{text}</p>
+              <p style={{ whiteSpace: 'pre-line' }}>{text}</p>
             </div>
           </motion.div>
         )}

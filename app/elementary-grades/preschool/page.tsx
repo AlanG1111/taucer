@@ -1,28 +1,10 @@
 'use client';
 
 import React from 'react';
-import {
-  PreSchoolPageMemories,
-  PreSchoolQuestions,
-  PreSchoolIntro,
-  PreSchoolPreview,
-} from '@/components/PreSchoolComponents/index';
-import { PriceSection, RequestContainer } from '@/components/common';
+import { PreSchoolPageMemories, PreSchoolIntro, PreSchoolPreview } from '@/components/PreSchoolComponents/index';
+import { PriceSection, RequestContainer, FAQ } from '@/components/common';
 
 export default function preschool() {
-  const prices = {
-    month: {
-      price: 14500,
-      crossedPrice: 16000,
-      entranceFee: 2000,
-    },
-    year: {
-      price: 14500,
-      crossedPrice: 160000,
-      entranceFee: 2000,
-    },
-  };
-
   return (
     <div>
       <PreSchoolIntro />
@@ -30,7 +12,55 @@ export default function preschool() {
       <PriceSection prices={prices} />
       <RequestContainer />
       <PreSchoolPageMemories />
-      <PreSchoolQuestions />
+      <FAQ questions={questions} />
     </div>
   );
 }
+
+const prices = {
+  month: {
+    price: 14500,
+    crossedPrice: 16000,
+    entranceFee: 2000,
+  },
+  year: {
+    price: 14500,
+    crossedPrice: 160000,
+    entranceFee: 2000,
+  },
+};
+
+const questions = [
+  {
+    title: 'З якого віку дитина може піти до 0 класу?',
+    text: 'Вступ можливий для дітей з 4 до 6 років.',
+  },
+  {
+    title: 'Яка кількість дітей у групі?',
+    text: 'До 10 дітей, з якими перебувають вчитель та помічник. Є супровід психолога й логопеда. Гуртки та секції проводять інші педагоги.',
+  },
+  {
+    title: 'Дитина буде готова до школи без додаткових занять?',
+    text: 'Так, програма націлена на комплексну підготовку до школи. Дитина здобуде навички читання.',
+  },
+  {
+    title: 'За якою програмою навчаються діти?',
+    text: 'За програмою “Мr. leader” та авторською читацькою програмою Вікторії В.',
+  },
+  {
+    title: 'Діти вивчають іноземні мови?',
+    text: 'Так, ми проводимо ігрові заняття з англійської мови разом із носіями. Також у батьків є можливість обрати другу  іноземну мову для вивчення (польська / французька / німецька).',
+  },
+  {
+    title: 'Чи безпечно у вас?',
+    text: 'Ми маємо цілодобову охорону та постійне відеоспостереження. Заїзд на територію Taucer можливий лише з дозволу адміністрації та після проходження поста охорони.',
+  },
+  {
+    title: 'Які дії під час повітряної тривоги?',
+    text: 'Під час тривоги діти, разом із вчителями, перебувають в укритті, яке обладнане всім необхідним для комфортного продовження навчального процесу, дозвілля та ігор.',
+  },
+  {
+    title: 'Яке харчування?',
+    text: 'Учні харчуються 5 разів на день стравами, що готують наші професійні кухарі. Батьки самостійно обирають раціон дитини на день у застосунку School Today.  Якщо в дитини є особливості в харчуванні, ми коригуємо меню відповідно до індивідуальних потреб ',
+  },
+];
